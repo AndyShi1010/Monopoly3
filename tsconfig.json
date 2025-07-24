@@ -2,13 +2,16 @@
   "type": "module",
   "compilerOptions": {
     "module": "ESNext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "jsx": "react-jsx",
   },
   "ts-node": {
     // Tell ts-node CLI to install the --loader automatically
     "esm": true
   },
   "files": [],
+  // "include": ["frontend/**/*", "backend/**/*", "shared", "types/*"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
